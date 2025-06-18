@@ -1,124 +1,247 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Recursive", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(207, 165, 113, 0.841);
+  display: flex;
+  height: 140px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  
+}
+
+header img {
+  width: 176px;
+}
+
+header .container-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.menu {
+  max-width: 700px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  font-size: 20px;
+  color: black;
+  font-family: "Recursive", sans-serif;
+  text-decoration: none;
+}
+
+.container-grid{
+  width: 80vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* .container-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+} */
 
 header {
     background-color: rgba(207, 165, 113, 0.841);
     display: flex;
     height: 140px;
     align-items: center;
-    justify-content:space-between;
+    justify-content: center;
+    padding: 0 20px;
 }
 
 header img {
     width: 176px;
 }
 
-
-.container-grid{
-    margin: 1400px;
-    width: 80vw;
-    margin: 0 auto;
-
-}
-
-
-header .container-grid{
+header .container-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
-.menu{
+.menu {
     max-width: 700px;
     width: 70%;
-    
     display: flex;
     justify-content: space-between;
 }
 
-
-.menu a{
+.menu a {
     font-size: 20px;
     color: black;
-    font-family: "Recursive" sans-linear;
+    font-family: "Recursive", sans-serif;
+    text-decoration: none;
+    position: relative; 
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
 }
 
-.container-grid{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 84vh; 
+.menu a::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0;
+    width: 0;
+    height: 2px; 
+    background-color: black; 
+    transition: width 0.3s ease-out; 
 }
 
-/* ----------- Sobre agencia ----------- */
+.menu a:hover {
+    color: #333; 
+}
 
+.menu a:hover::after {
+    width: 100%; 
+}
+.hero-section {
+   background-image: url(./Imgs/Banner\ Moda\ Viva.png);
+  background-size: cover;
+  height: 100vh;
+
+}
+
+/* .hero-image{
+  background-image: url(./Imgs/Banner\ Moda\ Viva.png);
+  width: 100vw;
+  height: auto;
+} */
+
+/* --------- Sobre agência --------- */
 .sobre-agencia {
-  background-color: #ffffff;
-  padding: 40px 20px;
-  font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    font-family:"Recursive", sans-serif;
+    margin-bottom: 20px;
+    margin-top: 80px; 
+    text-align: center;
 }
 
 .sobre-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-  flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .foto-agencia {
-  width: 250px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
 }
 
 .texto-sobre {
-  max-width: 600px;
-  text-align: center;
+    max-width: 600px;
+    text-align: center;
 }
 
 .texto-sobre h2 {
-  font-size: 20px;
-  background-color: #2d6336;
-  color: #fff;
-  padding: 10px 20px;
-  display: inline-block;
-  border-radius: 20px;
-  margin-bottom: 15px;
+    font-size: 20px;
+    background-color: #2d6336;
+    color: #fff;
+    padding: 10px 20px;
+    display: block; 
+    width: fit-content; 
+    border-radius: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
 .texto-sobre p {
-  font-size: 14px;
-  color: #333;
-  line-height: 1.5;
-  margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center; 
+    margin-top: 25px; 
 }
 
 .botao-produtos {
-  display: inline-block;
-  background-color: #2d6336;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
+    display: block;
+    width: fit-content;
+    background-color: #2d6336;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .botao-produtos:hover {
-  background-color: #24522b;
+    background-color: #24522b;
 }
 
-/* ---------- Nossos produtos ----------  */
-
 .nossos-produtos {
-  padding: 40px 20px;
+    padding-top: 20px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* --- Nossos produtos --- */
+.nossos-produtos {
+    padding-top: 20px; 
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+}
+
+/* --- Our Products Section --- */
+.nossos-produtos {
   background-color: #ffffff;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -129,6 +252,7 @@ header .container-grid{
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .produto-card {
@@ -144,7 +268,7 @@ header .container-grid{
   transform: translateY(-5px);
 }
 
-.produto-card img {
+.produto-card svg {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
@@ -161,12 +285,7 @@ header .container-grid{
   color: #333;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-}
-
+/* --- Information Section --- */
 .informacoes {
   display: flex;
   justify-content: center;
@@ -175,13 +294,14 @@ body {
   background-color: #fff1f1;
   text-align: center;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .info-item {
   max-width: 200px;
 }
 
-.info-item img {
+.info-item svg {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
@@ -198,13 +318,7 @@ body {
   font-size: 14px;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-}
-
-/* --------- contato ----- */
+/* --- Contato --- */
 .ajuda-contato {
   display: flex;
   justify-content: space-around;
@@ -217,6 +331,7 @@ body {
 .coluna {
   max-width: 300px;
   margin: 10px;
+  text-align: left;
 }
 
 .coluna h3 {
@@ -242,52 +357,47 @@ body {
   margin: 8px 0;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  margin: 0;
-  font-family: "Recursive", sans-linear
-}
-
+/* --- Newsletter Section --- */
 .newsletter {
   background-color: #d8d0c9;
   padding: 20px 30px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  animation: fadeIn 1s ease-in;
+  
 }
 
-.info {
+.newsletter .info {
   display: flex;
   align-items: center;
-  gap: 300px;
-  margin-bottom: 100px;
+  gap: 15px;
+  margin-bottom: 0;
+
 }
 
-.info img {
+.newsletter .info svg {
   width: 40px;
-  height: auto;
+  height: 40px;
 }
 
-.info strong {
+.newsletter .info strong {
   font-size: 14px;
   color: #222;
 }
 
-.info span {
+.newsletter .info span {
   font-size: 13px;
   color: #333;
 }
 
 .formulario {
   display: flex;
-  gap: 25px;
+  gap: 15px;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+ 
 }
 
 .formulario input {
@@ -317,14 +427,11 @@ body {
 }
 
 .formulario button:hover {
-  background-color:#006837;
+  background-color: #006837;
   transform: scale(1.05);
-  }
+}
 
-
-
-/* ---------- Rodape ---------- */
-
+/* --- Footer --- */
 .rodape {
   background-color: #000;
   color: white;
@@ -332,6 +439,56 @@ body {
   font-family: Arial, sans-serif;
   font-size: 12px;
   position: relative;
+  text-align: center;
+ 
+}
+
+.linha-topo {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  margin-bottom: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rodape-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.texto-rodape {
+  text-align:start ;
+  margin-bottom: 15px;
+}
+
+.icones-sociais {
+  margin-bottom: 15px;
+ 
+}
+
+.icones-sociais img {
+  width: 24px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);
+}
+
+.logo-rodape img{
+  width: 100px;
+}
+
+/* --- Footer --- */
+/* .rodape {
+  background-color: #000;
+  color: white;
+  padding: 20px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+ 
 }
 
 .linha-topo {
@@ -347,32 +504,63 @@ body {
 .rodape-conteudo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .texto-rodape {
   text-align: left;
-  align-self: flex-start;
   margin-bottom: 15px;
+  width: 100%;
+
 }
 
 .icones-sociais {
   margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  
 }
 
 .icones-sociais img {
   width: 24px;
   margin: 0 10px;
   filter: brightness(0) invert(1);
-}
+} */
 
 .logo-rodape span {
-  display: inline-block;
-  border: 2px solid white;
-  border-radius: 50%;
-  padding: 8px 16px;
-  font-weight: bold;
-  font-size: 16px;
+ 
+}
+
+
+/* ----------- Banner descontos ----------- */
+
+.discount-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  
+}
+
+
+/* --- Nossos produtos --- */
+.nossos-produtos {
+    padding-top: 10px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px; 
+    margin-bottom: 40px;
 }
 
 

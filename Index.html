@@ -5,150 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda Viva</title>
-    <link rel="stylesheet" href="./Imgs/logo moda viva branco.svg" type="image/x-icon">
+    <link rel="icon" href="./Imgs/logo moda viva branco.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 
 <body>
-    <main>
-
-        <header>
-            <div class="container-grid">
-                <img src="./Imgs/logo moda viva branco.svg" alt="logo da moda viva">
-                <nav class="menu">
-                    <a href="#">Conheça</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Informações</a>
-
-            </div>
+    <header>
+        <div class="container-grid">
+            <img src="./Imgs/logo moda viva branco.svg" alt="Logo da Moda Viva">
+            <nav class="menu">
+                <a href="#sobre-container">Conheça</a>
+                <a href="#produtos-container">Shop</a>
+                <a href="#info-item">Informações</a>
             </nav>
-
-
-            <div class="icones"></div>
+            <div class="icones">
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section class="header img">
-                <div class="header">
-                    <img src="./Imgs/Banner Moda Viva.png" alt="foto sobre">
+    <main>
+        <section class="hero-section">
+            <div class="hero-image">
+                
+            </div>
+        </section>
+
+        <section class="sobre-agencia">
+            <div id="sobre-container" class="sobre-container">
+                <img src="./Imgs/Foto (Sobre a agência).png" alt="Imagem da agência" class="foto-agencia">
+                <div class="texto-sobre">
+                    <h2>Sobre a nossa agência</h2>
+                    <p>
+                        A Moda Viva é uma agência especializada em atender empresas que têm a sustentabilidade como
+                        principal de suas propostas.
+                        A palavra “moda” representa o jeito de se vestir e expressar, ela reflete identidade e até
+                        movimentos sociais.
+                        A palavra “viva” transmite energia, movimento e celebração. Já o círculo com a planta
+                        representa a natureza e nossa proximidade com a sustentabilidade consciente.
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="nossos-produtos">
+            <a href="#" class="botao-produtos">Nossos Produtos</a>
+            <div id="produtos-container" class="produtos-container">
+                <div class="produto-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M247.59,61.22,195.83,33A8,8,0,0,0,192,32H160a8,8,0,0,0-8,8,24,24,0,0,1-48,0,8,8,0,0,0-8-8H64a8,8,0,0,0-3.84,1L8.41,61.22A15.76,15.76,0,0,0,1.82,82.48l19.27,36.81A16.37,16.37,0,0,0,35.67,128H56v80a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V128h20.34a16.37,16.37,0,0,0,14.58-8.71l19.27-36.81A15.76,15.76,0,0,0,247.59,61.22ZM35.67,112a.62.62,0,0,1-.41-.13L16.09,75.26,56,53.48V112ZM184,208H72V48h16.8a40,40,0,0,0,78.38,0H184Zm36.75-96.14a.55.55,0,0,1-.41.14H200V53.48l39.92,21.78Z">
+                        </path>
+                    </svg>
+                    <h3>Roupas</h3>
+                    <p>Vestidos, camisetas, shorts, calça, top</p>
+                </div>
+                <div class="produto-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M231.16,166.63l-28.63-14.31A47.74,47.74,0,0,1,176,109.39V80a8,8,0,0,0-8-8,48.05,48.05,0,0,1-48-48,8,8,0,0,0-12.83-6.37L30.13,76l-.2.16a16,16,0,0,0-1.24,23.75L142.4,213.66a8,8,0,0,0,5.66,2.34H224a16,16,0,0,0,16-16V180.94A15.92,15.92,0,0,0,231.16,166.63ZM224,200H151.37L40,88.63l12.87-9.76,38.79,38.79A8,8,0,0,0,103,106.34L65.74,69.11l40-30.31A64.15,64.15,0,0,0,160,87.5v21.89a63.65,63.65,0,0,0,35.38,57.24L224,180.94ZM70.8,184H32a8,8,0,0,1,0-16H70.8a8,8,0,1,1,0,16Zm40,24a8,8,0,0,1-8,8H48a8,8,0,0,1,0-16h54.8A8,8,0,0,1,110.8,208Z">
+                        </path>
+                    </svg>
+                    <h3>Sapatos</h3>
+                    <p>Chinelo, boné, óculos, colar, brinco, pulseiras</p>
+                </div>
+                <div class="produto-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M245.83,121.63a15.53,15.53,0,0,0-9.52-7.33,73.51,73.51,0,0,0-22.17-2.22c4-19.85,1-35.55-2.06-44.86a16.15,16.15,0,0,0-18.79-10.88,85.53,85.53,0,0,0-28.55,12.12,94.58,94.58,0,0,0-27.11-33.25,16.05,16.05,0,0,0-19.26,0A94.48,94.48,0,0,0,91.26,68.46,85.53,85.53,0,0,0,62.71,56.34,16.15,16.15,0,0,0,43.92,67.22c-3,9.31-6,25-2.06,44.86a73.51,73.51,0,0,0-22.17,2.22,15.53,15.53,0,0,0-9.52,7.33,16,16,0,0,0-1.6,12.27c3.39,12.57,13.8,36.48,45.33,55.32S113.13,208,128.05,208s42.67,0,74-18.78c31.53-18.84,41.94-42.75,45.33-55.32A16,16,0,0,0,245.83,121.63ZM59.14,72.14a.2.2,0,0,1,.23-.15A70.43,70.43,0,0,1,85.18,83.66,118.65,118.65,0,0,0,80,119.17c0,18.74,3.77,34,9.11,46.28A123.59,123.59,0,0,1,69.57,140C51.55,108.62,55.3,84,59.14,72.14Zm3,103.35C35.47,159.57,26.82,140.05,24,129.7a59.82,59.82,0,0,1,22.5-1.17,129.08,129.08,0,0,0,9.15,19.41,142.28,142.28,0,0,0,34,39.56A114.92,114.92,0,0,1,62.1,175.49ZM128,190.4c-9.33-6.94-32-28.23-32-71.23C96,76.7,118.38,55.24,128,48c9.62,7.26,32,28.72,32,71.19C160,162.17,137.33,183.46,128,190.4ZM170.82,83.66A70.43,70.43,0,0,1,196.63,72a.2.2,0,0,1,.23.15C200.7,84,204.45,108.62,186.43,140a123.32,123.32,0,0,1-19.54,25.48c5.34-12.26,9.11-27.54,9.11-46.28A118.65,118.65,0,0,0,170.82,83.66ZM232,129.72c-2.77,10.25-11.4,29.81-38.09,45.77a114.92,114.92,0,0,1-27.55,12,142.28,142.28,0,0,0,34-39.56,129.08,129.08,0,0,0,9.15-19.41A59.69,59.69,0,0,1,232,129.71Z">
+                        </path>
+                    </svg>
+                    <h3>Acessórios</h3>
+                    <p>Tênis, sandália, chinelos</p>
+                </div>
+            </div>
+
+            <div class="discount-banner">
+                <img src="./Imgs/Banner de Descontos.png" alt="Banner de Descontos">
+            </div>
+
+            <section class="informacoes">
+                <div id="info-item" class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z">
+                        </path>
+                    </svg>
+                    <h4>Entrega</h4>
+                    <p>Para todo Brasil</p>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M224,96.8V96a56.06,56.06,0,0,0-56-56h-8a16,16,0,0,0-16,16V176H128V72a8,8,0,0,0-8-8H16A16,16,0,0,0,0,80V184a32,32,0,0,0,56,21.13A32,32,0,0,0,111,192h82a32,32,0,0,0,63-8V136A40.07,40.07,0,0,0,224,96.8ZM160,56h8a40,40,0,0,1,40,40v8a8,8,0,0,0,8,8,24,24,0,0,1,24,24v20.31A31.71,31.71,0,0,0,224,152a32.06,32.06,0,0,0-31,24H160ZM112,80v96h-1a32,32,0,0,0-55-13.13,31.9,31.9,0,0,0-40-6.56V80ZM32,200a16,16,0,1,1,16-16A16,16,0,0,1,32,200Zm48,0a16,16,0,1,1,16-16A16,16,0,0,1,80,200Zm144,0a16,16,0,1,1,16-16A16,16,0,0,1,224,200Z">
+                        </path>
+                    </svg>
+                    <h4>Todos os produtos</h4>
+                    <p>a pronta entrega</p>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V72H40V56Zm0,144H40V88H216V200Zm-40-88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z">
+                        </path>
+                    </svg>
+                    <h4>Compra 100%</h4>
+                    <p>segura</p>
                 </div>
             </section>
 
-            <section class="sobre-agencia">
-                <div class="sobre-container">
-                    <img src="./Imgs/Foto (Sobre a agência).png" alt="Imagem da agência" class="foto-agencia">
-                    <div class="texto-sobre">
-                        <h2>Sobre a nossa agência</h2>
-                        <p>
-                            A Moda Viva é uma agência especializada em atender empresas que têm a sustentabilidade como
-                            principal de suas propostas.
-                            A palavra “moda” representa o jeito de se vestir e expressar, ela reflete identidade e até
-                            movimentos sociais.
-                            A palavra “viva” transmite energia, movimento e celebração. Já o círculo com a planta
-                            representa a natureza e nossa proximidade com a sustentabilidade consciente.
-                        </p>
-                        <a href="#" class="botao-produtos">Nossos Produtos</a>
-                    </div>
-                </div>
-            </section>
+            <div class="visual-break-banner">
+                <img src="./Imgs/Rectangle 50.png" alt="Visual Break or Decorative Element">
+            </div>
+        </section>
 
-            <section class="nossos-produtos">
-                <div class="produtos-container">
-                    <div class="produto-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
-                            <path
-                                d="M247.59,61.22,195.83,33A8,8,0,0,0,192,32H160a8,8,0,0,0-8,8,24,24,0,0,1-48,0,8,8,0,0,0-8-8H64a8,8,0,0,0-3.84,1L8.41,61.22A15.76,15.76,0,0,0,1.82,82.48l19.27,36.81A16.37,16.37,0,0,0,35.67,128H56v80a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V128h20.34a16.37,16.37,0,0,0,14.58-8.71l19.27-36.81A15.76,15.76,0,0,0,247.59,61.22ZM35.67,112a.62.62,0,0,1-.41-.13L16.09,75.26,56,53.48V112ZM184,208H72V48h16.8a40,40,0,0,0,78.38,0H184Zm36.75-96.14a.55.55,0,0,1-.41.14H200V53.48l39.92,21.78Z">
-                            </path>
-                        </svg>
-                        <h3>Roupas</h3>
-                        <p>Vestidos, camisetas, shorts, calça, top</p>
-                    </div>
-                    <div class="produto-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
-                            <path
-                                d="M231.16,166.63l-28.63-14.31A47.74,47.74,0,0,1,176,109.39V80a8,8,0,0,0-8-8,48.05,48.05,0,0,1-48-48,8,8,0,0,0-12.83-6.37L30.13,76l-.2.16a16,16,0,0,0-1.24,23.75L142.4,213.66a8,8,0,0,0,5.66,2.34H224a16,16,0,0,0,16-16V180.94A15.92,15.92,0,0,0,231.16,166.63ZM224,200H151.37L40,88.63l12.87-9.76,38.79,38.79A8,8,0,0,0,103,106.34L65.74,69.11l40-30.31A64.15,64.15,0,0,0,160,87.5v21.89a63.65,63.65,0,0,0,35.38,57.24L224,180.94ZM70.8,184H32a8,8,0,0,1,0-16H70.8a8,8,0,1,1,0,16Zm40,24a8,8,0,0,1-8,8H48a8,8,0,0,1,0-16h54.8A8,8,0,0,1,110.8,208Z">
-                            </path>
-                        </svg>
-                        <h3>Sapatos</h3>
-                        <p>Chinelo, boné, óculos, colar, brinco, pulseiras</p>
-                    </div>
-                    <div class="produto-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
-                            <path
-                                d="M245.83,121.63a15.53,15.53,0,0,0-9.52-7.33,73.51,73.51,0,0,0-22.17-2.22c4-19.85,1-35.55-2.06-44.86a16.15,16.15,0,0,0-18.79-10.88,85.53,85.53,0,0,0-28.55,12.12,94.58,94.58,0,0,0-27.11-33.25,16.05,16.05,0,0,0-19.26,0A94.48,94.48,0,0,0,91.26,68.46,85.53,85.53,0,0,0,62.71,56.34,16.15,16.15,0,0,0,43.92,67.22c-3,9.31-6,25-2.06,44.86a73.51,73.51,0,0,0-22.17,2.22,15.53,15.53,0,0,0-9.52,7.33,16,16,0,0,0-1.6,12.27c3.39,12.57,13.8,36.48,45.33,55.32S113.13,208,128.05,208s42.67,0,74-18.78c31.53-18.84,41.94-42.75,45.33-55.32A16,16,0,0,0,245.83,121.63ZM59.14,72.14a.2.2,0,0,1,.23-.15A70.43,70.43,0,0,1,85.18,83.66,118.65,118.65,0,0,0,80,119.17c0,18.74,3.77,34,9.11,46.28A123.59,123.59,0,0,1,69.57,140C51.55,108.62,55.3,84,59.14,72.14Zm3,103.35C35.47,159.57,26.82,140.05,24,129.7a59.82,59.82,0,0,1,22.5-1.17,129.08,129.08,0,0,0,9.15,19.41,142.28,142.28,0,0,0,34,39.56A114.92,114.92,0,0,1,62.1,175.49ZM128,190.4c-9.33-6.94-32-28.23-32-71.23C96,76.7,118.38,55.24,128,48c9.62,7.26,32,28.72,32,71.19C160,162.17,137.33,183.46,128,190.4ZM170.82,83.66A70.43,70.43,0,0,1,196.63,72a.2.2,0,0,1,.23.15C200.7,84,204.45,108.62,186.43,140a123.32,123.32,0,0,1-19.54,25.48c5.34-12.26,9.11-27.54,9.11-46.28A118.65,118.65,0,0,0,170.82,83.66ZM232,129.72c-2.77,10.25-11.4,29.81-38.09,45.77a114.92,114.92,0,0,1-27.55,12,142.28,142.28,0,0,0,34-39.56,129.08,129.08,0,0,0,9.15-19.41A59.69,59.69,0,0,1,232,129.71Z">
-                            </path>
-                        </svg>
-                        <h3>Acessórios</h3>
-                        <p>Tênis, sandália, chinelos</p>
-                    </div>
-                </div>
+        <section class="ajuda-contato">
+            <div class="coluna">
+                <h3>PRECISA DE AJUDA?</h3>
+                <ul>
+                    <li>Política de Privacidade</li>
+                    <li>Trocas e devoluções</li>
+                    <li>Política de entrega</li>
+                    <li>Fale Conosco</li>
+                </ul>
+            </div>
 
-                <div>
-                    <img src="./Imgs/Banner de Descontos.png" alt="descontos">
-                </div>
+            <div class="coluna">
+                <h3>CONTATO</h3>
+                <p>- E-mail: modaviva25@gmail.com</p>
+                <p>- Via direct do Instagram: @moda.vivabr</p>
+                <p>- Atendimento de segunda à sábado, das 9h às 19h</p>
+            </div>
+        </section>
 
-                <section class="informacoes">
-                    <div class="info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
-                            viewBox="0 0 256 256">
-                            <path
-                                d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z">
-                            </path>
-                        </svg>
-                        <h4>Entrega</h4>
-                        <p>Para todo Brasil</p>
-                    </div>
-                    <div class="info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
-                            viewBox="0 0 256 256">
-                            <path
-                                d="M224,96.8V96a56.06,56.06,0,0,0-56-56h-8a16,16,0,0,0-16,16V176H128V72a8,8,0,0,0-8-8H16A16,16,0,0,0,0,80V184a32,32,0,0,0,56,21.13A32,32,0,0,0,111,192h82a32,32,0,0,0,63-8V136A40.07,40.07,0,0,0,224,96.8ZM160,56h8a40,40,0,0,1,40,40v8a8,8,0,0,0,8,8,24,24,0,0,1,24,24v20.31A31.71,31.71,0,0,0,224,152a32.06,32.06,0,0,0-31,24H160ZM112,80v96h-1a32,32,0,0,0-55-13.13,31.9,31.9,0,0,0-40-6.56V80ZM32,200a16,16,0,1,1,16-16A16,16,0,0,1,32,200Zm48,0a16,16,0,1,1,16-16A16,16,0,0,1,80,200Zm144,0a16,16,0,1,1,16-16A16,16,0,0,1,224,200Z">
-                            </path>
-                        </svg>
-                        <h4>Todos os produtos</h4>
-                        <p>a pronta entrega</p>
-                    </div>
-                    <div class="info-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
-                            viewBox="0 0 256 256">
-                            <path
-                                d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V72H40V56Zm0,144H40V88H216V200Zm-40-88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z">
-                            </path>
-                        </svg>
-                        <h4>Compra 100%</h4>
-                        <p>segura</p>
-                    </div>
-                </section>
-
-                <div>
-                    <img src="./Imgs/Rectangle 50.png" alt="retangulo">
-                </div>
-            </section>
-
-            <section class="ajuda-contato">
-                <div class="coluna">
-                    <h3>PRECISA DE AJUDA?</h3>
-                    <ul>
-                        <li>Política de Privacidade</li>
-                        <li>Trocas e devoluções</li>
-                        <li>Política de entrega</li>
-                        <li>Fale Conosco</li>
-                    </ul>
-                </div>
-
-                <div class="coluna">
-                    <h3>CONTATO</h3>
-                    <p>- E-mail: modaviva25@gmail.com</p>
-                    <p>- Via direct do Instagram: @moda.vivabr</p>
-                    <p>- Atendimento de segunda à sábado, das 9h às 19h</p>
-                </div>
-            </section>
-
-            <section class="newsletter">
+        <section class="newsletter">
             <div class="info">
                 <svg xmlns="http://www.w3.org/2000/svg" width="88" height="66" fill="currentColor"
                     class="bi bi-envelope" viewBox="0 0 16 16">
@@ -166,45 +158,36 @@
                 <button type="submit">Cadastre-se</button>
             </form>
         </section>
+    </main>
 
-            <footer class="rodape">
-                <hr class="linha-topo" />
-                <div class="rodape-conteudo">
-                    <div class="texto-rodape">
-                        <p><strong>MODA VIVA - TODOS OS DIREITOS RESERVADOS.</strong></p>
-                        <p>CNPJ: XX.XXX.XXX/XXXX-XX</p>
-                        <p>SUSTENTABILIDADE</p>
-                    </div>
+    <footer class="rodape">
+        <hr class="linha-topo" />
+        <div class="rodape-conteudo container-grid">
+            <div class="texto-rodape">
+                <p><strong>MODA VIVA - TODOS OS DIREITOS RESERVADOS.</strong></p>
+                <p>CNPJ: XX.XXX.XXX/XXXX-XX</p>
+                <p>SUSTENTABILIDADE</p>
+            </div>
 
-                    <div class="icones-sociais">
-                        <a href="#" class="icone">
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
-                                alt="Instagram" />
-                        </a>
-                        <a href="#" class="icone">
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
-                                alt="TikTok" />
-                        </a>
-                        <a href="#" class="icone">
-                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
-                                alt="Facebook" />
-                        </a>
-                    </div>
+            <div class="icones-sociais">
+                <a href="#" class="icone">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                        alt="Instagram" />
+                </a>
+                <a href="#" class="icone">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" />
+                </a>
+                <a href="#" class="icone">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                        alt="Facebook" />
+                </a>
+            </div>
 
-
-            </footer>
-
-
-
-
+            <div class="logo-rodape">
+                <img src="./Imgs/logo moda viva branco.svg" alt="logo rodape">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
-
-</body>
-
-</html>
-</main>
-
-</main>
-</body>
